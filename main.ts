@@ -10,7 +10,7 @@ ship = game.createSprite(2, 4)
 ship.set(LedSpriteProperty.Brightness, 250)
 game.setScore(0)
 basic.forever(function () {
-    enemy = game.createSprite(randint(0, 4), 1)
+    enemy = game.createSprite(randint(0, 4), 0)
     enemy.set(LedSpriteProperty.Brightness, 150)
     basic.pause(150)
     enemy.turn(Direction.Right, 90)
